@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+nutri = pd.read_csv("C://Users//t33130599//Desktop//nutri.csv")
+nutri.head()
+print(nutri)
+plt.boxplot(nutri["age"], vert = True)
+plt.ylabel("age")
+plt.show()
