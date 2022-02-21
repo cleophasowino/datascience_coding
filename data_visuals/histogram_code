@@ -1,1 +1,10 @@
+import numpy as np
+import matplotlib.pyplot as plt
 
+weights = np.ones_like(nutri.age)/nutri.age.count()
+print(weights)
+plt.hist(nutri.age, bins = 9, weights = weights, facecolor= "cyan", edgecolor = "blue", linewidth = 1.5)
+plt.xlabel("Age")
+plt.ylabel("Proportion of Total")
+plt.title("A histogram of Ages for nutrition data set")
+plt.show()
